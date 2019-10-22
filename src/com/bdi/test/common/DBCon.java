@@ -8,7 +8,7 @@ public class DBCon {
 	private final static String URL;
 	private final static String ID;
 	private final static String PWD;
-	private static final String DRIVER_NAME;
+	private final static String DRIVER_NAME;
 	static {
 		URL="jdbc:oracle:thin:@localhost:1521:xe";
 		ID="BDI";

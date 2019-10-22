@@ -25,7 +25,7 @@
 
 			Connection con = DBCon.getCon();//전화를 걸었다.(DBCon에서 생성된 전화기로)
 			Statement stmt = con.createStatement();
-			String sql = "insert into user_info(ui_id,ui_pwd,ui_name,ui_age,ui_etc)";
+			String sql = "insert into user_info(mi_num, mi_name, mi_price, mi_date, mi_desc, mi_age, mi_star_rate)";
 			sql += " values('" + id + "','" + pwd + "','" + name + "','" + age + "','" + etc + "')";
 			int result = stmt.executeUpdate(sql);
 			if (result == 1) {
