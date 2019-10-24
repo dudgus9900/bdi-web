@@ -23,7 +23,7 @@
 			out.println("니가 입력한 age :" + age + "<br>");
 			out.println("니가 입력한 etc :" + etc + "<br>");
 
-			Connection con = DBCon.getCon();//전화를 걸었다.(DBCon에서 생성된 전화기로)
+			Connection con = DBCon.getCon();
 			Statement stmt = con.createStatement();
 			String sql = "insert into user_info(mi_num, mi_name, mi_price, mi_date, mi_desc, mi_age, mi_star_rate)";
 			sql += " values('" + id + "','" + pwd + "','" + name + "','" + age + "','" + etc + "')";
